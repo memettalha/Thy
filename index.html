@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="top fixed-top">
+      <ul>
+        <li><a href="#">Corporate Club</a></li>
+        <li><a href="#">Miles&#38;Smiles</a></li>
+        <li>
+          <a href="#"><i class="bi bi-search-heart"></i>Ara</a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bi bi-globe-americas"></i>&nbsp;TR-INT&nbsp;<i
+              class="bi bi-chevron-down"
+            ></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-expand-xl fixed-top navbar-light">
+      <div class="ms-0">
+        <img src="images/THY-LOGO.avif" alt="logo" />
+      </div>
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <div class="element col-12 d-xl-flex align-items-center">
+          <ul class="navbar-nav my-3 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#features"
+                >PLANLA &#38; UÇ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SEYAHAT DENEYİMİ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#get">KEŞFET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#get">MILES&#38;SMİLES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#get">YARDIM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#get">Üye Ol</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="nav-item btn btn-outline-secondary rounded-pill btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#feedback"
+          >
+            GİRİŞ YAP <i class="bi bi-person"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="merhaba" id="merhaba">
+      <br /><br /><br /><br /><br />
+      <h1>MERHABA</h1>
+      <h2>Nereye Gitmek İstiyorsunuz?</h2>
+      <img
+        class="muhur"
+        src="images/passenger-rights-7e25fdcd.avif"
+        alt="passenger-rights-7e25fdcd"
+      />
+    </section>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item me-2" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="home-tab-pane"
+          aria-selected="true"
+        >
+          <img src="images/ucak.svg" alt="" /> Uçak
+        </button>
+      </li>
+      <li class="nav-item me-2" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="profile-tab-pane"
+          aria-selected="false"
+        >
+          <img src="images/tatilpaketi.svg" alt="" /> Tatil Paketi
+        </button>
+      </li>
+      <li class="nav-item me-2" role="presentation">
+        <button
+          class="nav-link"
+          id="contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#contact-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="contact-tab-pane"
+          aria-selected="false"
+        >
+          <img src="images/biletyönetimi.svg" alt="" /> Check-in
+        </button>
+      </li>
+      <li class="nav-item me-2" role="presentation">
+        <button
+          class="nav-link d-none d-md-inline-block"
+          id="disabled-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#disabled-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="disabled-tab-pane"
+          aria-selected="false"
+        >
+          <img src="images/ucusdurumu.svg" alt="" /> Uçuş Durumu
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home-tab-pane"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+        tabindex="0"
+      >
+        <div class="all mb-3 ms-5">
+          <div class="input d-flex align-items-center justify-content-center">
+            <input type="radio" id="gidis" name="gidis" value="dönüs" />
+            <label class="ms-1 me-3" for="gidis">Gidiş - Dönüş</label>
+            <input type="radio" id="tek" name="gidis" value="tekyon" />
+            <label class="ms-1 me-3" for="tek">Tek yön</label>
+            <input type="radio" id="ist" name="gidis" value="ist" />
+            <label class="ms-1 me-3" for="ist">İstanbul'da Stopover</label>
+            <input type="radio" id="coklu" name="gidis" value="coklu" />
+            <label class="ms-1 me-3" for="coklu">Çoklu uçuş</label>
+          </div>
+          <a class="odul" href="#">
+            <img src="images/exit.svg" alt="exit" width="23" height="23" />Ödül bilet -
+            Millerinizle bilet alın</a
+          >
+        </div>
+      </div>
+      <div class="where mb-3">
+        <div class="row">
+          <div class="form-floating mb-3 col-6 col-md">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Havalimanı"
+            />
+            <label for="floatingInput">Nerden</label>
+          </div>
+          <div class="form-floating col-6 col-md">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Havalimanı"
+            />
+            <label for="floatingPassword">Nereye</label>
+          </div>
+          <div class="form-floating mb-3 col-12 col-md">
+            <input
+              class="form-control"
+              type="date"
+              id="tarih"
+              style="height: 3.5rem"
+            />
+          </div>
+          <div class="form-floating mb-3 col-12 col-md">
+            <input type="number" class="form-control" id="floatingPassword2" />
+            <label for="floatingPassword2">Yolcular</label>
+          </div>
+          <a
+            class="ucusara ms-2 me-2 btn btn-danger d-block d-md-inline col-12 col-md"
+            href="#"
+            type="button"
+            >Uçuş ara
+            <span class="ms-auto"><i class="bi bi-arrow-right"></i></span
+          ></a>
+        </div>
+      </div>
+      <div class="firsat  mb-3">
+        <div class="row">
+          <div class="col-12 col-md-6  text-start">
+            <a href="">Uygun fırsatları gör&nbsp;<span class="red2">&#62;</span></a>
+          </div>
+          <div class="col-12 col-md-6 text-end">
+            <a href="" class="previous">Önceki aramalarım</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="profile-tab-pane"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+        tabindex="0"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, rerum.
+      </div>
+      <div
+        class="tab-pane fade"
+        id="contact-tab-pane"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+        tabindex="0"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem saepe
+        asperiores enim labore, praesentium blanditiis illum quaerat suscipit
+        provident nisi. At, voluptatem illo tempora fuga dolores officia
+        perspiciatis nobis odit?
+      </div>
+      <div
+        class="tab-pane fade"
+        id="disabled-tab-pane"
+        role="tabpanel"
+        aria-labelledby="disabled-tab"
+        tabindex="0"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+        doloremque. Cupiditate sequi iusto libero cumque sunt? Dolor repellendus
+        id asperiores!
+      </div>
+    </div>
+
+    <div class="contact">
+      <p class="ulas fixed-right">Bize ulaşın</p>
+    </div>
+    <div class="yukari">
+      <a href="#merhaba"><i class="bi bi-chevron-up"></i></a>
+    </div>
+    <section class="flight mt-5">
+      <div class="container  ">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2 gx-md-0 mb-3">
+            <div class="mltply text-center">
+              <i class="fa-solid fa-chair"></i>
+              <p><small>Koltuk Seçimi</small></p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 gx-md-0 mb-3">
+            <div class="mltply text-center">
+              <i class="bi bi-backpack"></i>
+              <p><small>Ekstra Bagaj</small></p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 gx-md-0 mb-3">
+            <div class="mltply text-center">
+              <i class="fa-sharp fa-solid fa-bed"></i>
+              <p><small>Otel Rezervasyonu</small></p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 gx-md-0 mb-3">
+            <div class="mltply text-center">
+              <i class="bi bi-car-front-fill"></i>
+              <p><small>Araç Kiralama</small></p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 gx-md-0 mb-3">
+            <div class="mltply text-center">
+              <i class="bi bi-send-exclamation"></i>
+              <p><small>Seyahat Sigortası</small></p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 gx-md-0 mb-3">
+            <div class="mltply text-center">
+              <i class="bi bi-gift"></i>
+              <p><small>Hediye Kart</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="warning">
+      <div class="container">
+        <div class="dear d-flex align-items-start">
+          <i class="bi bi-exclamation-triangle"></i>
+          <p>Değerli Yolcularımız</p>
+        </div>
+        <p class="info">
+          İstanbul Sabiha Gökçen Uluslararası Havalimanı iç hatlar özel yolcu
+          salonunun, 31 Ocak 2024 23:59 itibarıyla hizmet vermeyeceğini
+          belirtmek isteriz.
+        </p>
+      </div>
+    </section>
+    <section class="opportunity">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 tatil">
+            <p class="kat text-center">
+              Turkish Airlines Holidays ile 8 kata kadar ekstra Mil!
+            </p>
+            <div class="text-end">
+              <img
+                class="img-fluid rounded"
+                src="images/Holidays-2li.webp"
+                alt="holiday"
+              />
+            </div>
+            <small class=""
+              >Turkish Airlines Holidays ile hayalinizdeki tatil 8 kat daha
+              avantajlı! Üstelik 30 güne kadar koşulsuz iptal ve taksitli ödeme
+              seçenekleri Turkish Airlines Holidays’de.</small
+            >
+            <br />
+            <br />
+            <button class="btn btn-danger" type="button">Keşfet</button>
+          </div>
+          <div class="col-md-6">
+            <p class="kat text-center">Altıncı Kıta:Avustralya</p>
+            <img
+              class="img-fluid rounded"
+              src="images/melbourne_1.avif"
+              alt="melbourne"
+            />
+            <small class="mt-2"
+              >Dünyanın en büyük ada ülkesi Avustralya'ya yolculuğumuz 15
+              Mart'ta Melbourne ile başlıyor. Bu eşsiz kıtayı keşfetmek için
+              uçak biletinizi  uygulamamızdan şimdi
+              alabilirsiniz.</small
+            >
+            <br />
+            <br />
+            <button class="btn btn-danger" type="button">Keşfet</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="promosyon">
+      <div class="container text-center">
+        <p>
+          <span class="Gaziantep"
+            >Gaziantep<i class="bi bi-caret-down-fill"></i></span
+          >çıkışlı en iyi promosyonlar
+        </p>
+        <img src="images/PortLuis,jpg.avif" alt="portluis" />
+        <div class="resimici">
+          <i class="bi bi-heart-fill"></i>
+          <i class="bi bi-share-fill"></i>
+          <h2>Port Louis, Mauritius</h2>
+          <p class="fiyat">Başlangıç fiyatı: 905 USD</p>
+          <p class="economy">Economy Class</p>
+          <button class="btn btn-danger" type="button">Bilet al</button>
+        </div>
+        <h5>Özel Fırsatlarla yeni şehirlere!</h5>
+        <a class="tüm" href="#">Tüm Kampanyaları göster&nbsp;>></a>
+      </div>
+    </section>
+    <hr />
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+              <div class="col mx-5">
+                <div class="card swiper-slide">
+                  <img src="images/viyana.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Avrupa şehirlerine ayrıcalıklı uçuş fırsatı!
+                    </p>
+                    <p class="small text-center">
+                      30 Ocak'a kadar biletinizi alın, Avrupa'nın en popüler
+                      rotalarına avantajlı fiyatlarla uçun.
+                    </p>
+                    <br />
+                    <p class="red3 text-center">Bilet al &nbsp;>></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mx-5">
+                <div class="card swiper-slide">
+                  <img src="images/aile.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Yurt içi rotaları ailenizle beraber keşfedin!
+                    </p>
+                    <p class="small text-center">
+                      01 Kasım 2023-4 Nisan 2024 tarihleri arasında ailenizle %20
+                      indirimle uçmak için 2 Nisan’a kadar biletinizi alın!
+                    </p>
+                    <br />
+                    <p class="red3 text-center">Bilet al &nbsp;>></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mx-5">
+                <div class="card swiper-slide">
+                  <img src="images/ogretmen.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Yurt içi uçuşlarda öğretmenlerimize özel %20 indirim!
+                    </p>
+                    <p class="small text-center">
+                      Çok değerli olan öğretmenlerimizin keşiflerine eşlik
+                      ediyoruz!
+                    </p>
+                    <br />
+                    <p class="red3 text-center">Bilet al &nbsp;>></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col mx-5">
+              <div class="card swiper-slide">
+                <img src="images/car.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Ayrıcalıklarla konaklayın.
+                  </p>
+                  <p class="small text-center">
+                    Türk Hava Yolları internet sitesi veya mobil uygulaması
+                    aracılığıyla Booking.com ve Jolly üzerinden yapacağınız
+                    rezervasyonlarla Mil kazanın, ayrıcalıklı konaklayın.
+                  </p>
+                  <br />
+                  <p class=" small red3 text-center">
+                    Otel rezervasyonu &nbsp;>>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mx-5">
+              <div class="card swiper-slide">
+                <img src="images/seyahat.avif" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Araç kiralama hizmeti ekleyin & Ekstra Mil kazanın
+                  </p>
+                  <p class="small text-center">
+                    Avis veya Budget araç rezervasyonunuzu online kanallarımız
+                    aracılığıyla oluşturun, 500+ bonus Mil ve %30'a varan
+                    indirim ayrıcalığı kazanın.
+                  </p>
+                  <br />
+                  <p class="red3 text-center">
+                    Araç Kiralama &nbsp;>>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mx-5">
+              <div class="card swiper-slide">
+                <img src="images/ogretmen.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Yurt içi uçuşlarda öğretmenlerimize özel %20 indirim!
+                  </p>
+                  <p class="small text-center">
+                    Çok değerli olan öğretmenlerimizin keşiflerine eşlik
+                    ediyoruz!
+                  </p>
+                  <br />
+                  <p class="red3 text-center">
+                    Bilet al &nbsp;>>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col mx-5">
+              <div class="card swiper-slide">
+                <img src="images/ayasofya.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Avrupa’dan Türkiye’ye avantajlı uçuş fırsatı!
+                  </p>
+                  <p class="small text-center">
+                    30 Ocak’a kadar uçak biletinizi alın, Türkiye’nin eşsiz
+                    noktalarına cazip fiyatlarla uçun.
+                  </p>
+                  <br />
+                  <p class="red3 text-center">
+                    Bilet al &nbsp;>>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mx-5">
+              <div class="card swiper-slide">
+                <img src="images/earth.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    En popüler rotalarımıza avantajlı fiyatları inceleyin!
+                  </p>
+                  <p class="small text-center">
+                    En popüler rotalara en uygun fiyatlarla biletinizi hemen
+                    alın.
+                  </p>
+                  <br />
+                  <p class="red3 text-center">
+                    Detaylı Bilgi &nbsp;>></small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mx-5">
+              <div class="card swiper-slide">
+                <img src="images/kktc.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Ailenizle KKTC’ye uçmak %20 indirimli!
+                  </p>
+                  <p class="small text-center">
+                    Ailenizle yapacağınız KKTC çıkışlı/varışlı İstanbul ve
+                    Antalya seyahatlerinizde %20 indirimle uçabilirsiniz!
+                  </p>
+                  <br />
+                  <p class="red3 text-center">
+                    Bilet al &nbsp;>>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="medals">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-4 d-flex align-items-center">
+            <img src="images/medals1.avif" alt="medals1" />
+            <p><small>DÜNYA ÇAPINDA HAVAYOLU</small></p>
+          </div>
+          <div class="col-6 col-md-3 mb-4 d-flex align-items-center">
+            <img src="images/medals2.avif" alt="medals2" />
+            <p><small>BEŞ YILDIZLI KÜRESEL HAVA YOLU</small></p>
+          </div>
+          <div class="col-6 col-md-3 mb-4 d-flex align-items-center">
+            <img src="images/medals3.avif" alt="medals3" />
+            <p><small>AVRUPA'NIN EN İYİ HAVA YOLU</small></p>
+          </div>
+          <div class="col-6 col-md-3 mb-4 d-flex align-items-center">
+            <img src="images/medals4.avif" alt="medals4" />
+            <p><small>EN İYİ BUSINESS CLASS İKRAM HİZMETİ</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col"><img src="images/partner1.webp" alt="partner1" /></div>
+          <div class="col"><img src="images/partner2.avif" alt="partner2" /></div>
+          <div class="col"><img src="images/partner3.avif" alt="partner3" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="social-media">
+      <div class="d-flex align-items-center justify-content-center">
+        <a href="#" class="bi bi-facebook"></a>
+        <a href="#" class="bi bi-twitter"></a>
+        <a href="#" class="bi bi-youtube"></a>
+        <a href="#" class="bi bi-instagram"></a>
+        <a href="#" class="bi bi-tiktok"></a>
+        <a href="#" class="bi bi-linkedin"></a>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <ul class="d-flex">
+          <li><a href="" class="secenek">PLANLA & UÇ</a></li>
+          <li><a href="" class="secenek">SEYAHAT DENEYİMİ</a></li>
+          <li><a href="" class="secenek">KEŞFET</a></li>
+          <li><a href="" class="secenek">POPÜLER UÇUŞLAR</a></li>
+          <li><a href="" class="secenek">YARDIM</a></li>
+          <li><a href="" class="secenek">MILES&SMILES</a></li>
+          <li><a href="" class="secenek">CORPORATE CLUB</a></li>
+          <li><a href="" class="secenek">TÜRK HAVA YOLLARI</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="sub d-flex justify-content-center">
+          <div class="row">
+            <div class="col-4 col-md">
+              <a href=""> Bilgi Toplumu Hizmetleri</a>
+            </div>
+            <div class="col-4 col-md">
+              <a href=""> Erişilebilirlik</a>
+            </div>
+            <div class="col-4 col-md">
+              <a href=""> Gizlilik ve Çerez Politikası</a>
+            </div>
+            <div class="col-4 col-md">
+              <a href=""> Yasal Uyarı</a>
+            </div>
+            <div class="col-4 col-md">
+              <a href=""> Yolcu Hakları</a>
+            </div>
+            <div class="col-4 col-md">
+              <a href=""> Çerez Ayarlarını Değiştir</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <small class="son d-flex justify-content-center mt-3"
+            >Türk Hava Yolları A.O. Her hakkı saklıdır. © 1996 - 2024</small
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

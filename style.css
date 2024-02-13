@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.top{
+    background-color: #2b3947;
+}
+.top ul{
+    display:flex;
+    float:right;
+    margin:0px;
+}
+.top li{
+    list-style-type:none;
+    padding: 5px;
+}
+.top li a:hover{
+    color: #20c997;
+}
+.top li a{
+    color:#c3cbc7;
+    font-size:11px;
+    font-family: MuseoModerno; 
+    font-weight:300;
+    text-decoration:none;
+    padding:0 3px;
+    margin-right: 10px;
+    border-left:1px dotted #ffff;
+    padding-left:10px;
+}
+.navbar{
+    margin-top: 33px;
+    padding:0px 150px;
+    background-color: #232b38;
+}
+.navbar .element{
+    margin-left:280px;
+    float:right;
+}
+.navbar img{
+    width:218px;
+    height:40px;
+}
+.navbar li:hover{
+    box-shadow:0px 3px red;
+}
+.navbar a{
+    color:white;
+    font-family:MuseoSans-900;
+    font-size:13px;
+    line-height:30px;
+    font-weight:700;
+    padding:15px;
+}
+.navbar a:hover{
+    color:#fff;
+    background-color: #141f2b;  
+}
+.navbar button{
+    font-size: 13px;
+    font-weight:700;
+    line-height: 20px;
+    color:#fff;
+    background-color: #232b38;
+}
+.navbar .navbar-toggler{
+    background-color:#fff;
+}
+.merhaba{
+    background-image:url("images/anasayfa-1400.webp");
+    margin-top: 75px;
+    height:360px;
+    width:100%;
+}
+.merhaba h1{
+    color:white;
+    font-size: 24px;
+    margin-left:200px;
+}
+.merhaba h2{
+    color:white;
+    font-size: 38px;
+    margin-left:200px;
+}
+.merhaba .muhur{
+    position: absolute;
+    top:5rem;
+    left:73rem;
+    width: 150px;
+    height: auto;
+}
+.contact{
+    position: relative;
+}
+.contact .ulas{
+    background-color: #1074e6;
+    display: inline-block;
+    align-items: center;
+    transform: rotate(270deg);
+    color:#fff;
+    z-index: 1 !important;
+    font-size: 16px;
+    width:130px;
+    height:40px;
+    text-align: center;
+    position: fixed;
+    left:84rem;
+    top:20rem;  
+}
+.yukari{
+    position:relative;
+}
+.yukari i{
+    background-color: #d6d7d8;
+    padding:1em;
+    color:#fff;
+    border-radius:6px;
+    position: fixed;
+    left:87rem;
+    top:33rem;
+}
+.yukari i:hover{
+    background-color: #181c23;
+    opacity:0.35;
+}
+
+/* 4lü buton */
+.nav-tabs{
+    width:900px;
+    height:150px;
+    padding: 30px 26px 20px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-150px;
+    margin-left:50px;
+}
+.nav-tabs .nav-item button{
+    color:#647281;
+    background-color: #fff;
+}
+.nav-tabs .nav-item button:hover{
+    color:#e81932;
+}
+
+.tab-content{
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    background-color: #fff;
+    box-shadow: 0 6px 6px #0000001f;
+    padding:26px 30px 26px 20px;
+}
+@media (max-width:720px){
+    .nav-tabs{
+        width:435px;
+        margin-left:35px;
+        padding: 0;
+        padding-top:10px ;
+    }
+    .tab-content{
+        width:400px;
+    }
+    .merhaba h1{
+        position: absolute;
+        top:150px;
+    }
+    .merhaba h2{
+        position: absolute;
+        top:180px;
+    }
+    .contact .ulas{
+        left:435px;
+    }
+    .swiper-slide{
+        margin-left: 45px;
+    }
+    .merhaba .muhur{
+        position: absolute;
+        left:360px;
+        top:100px;
+        width:50px;
+        height:auto;
+    }
+    .warning .container{
+        width:100%;
+    }
+}    
+.ucusara{
+    width:25rem;
+    height:4rem;
+    text-align: center;
+    line-height: 46px;
+}
+.giris{
+    width:8rem;
+    background: #f4f6f8;
+    border-radius:5px;
+    box-shadow:none;
+    border: none;
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+}
+.grup{
+    position: relative;
+}
+.all{
+    display:flex;
+    align-items: start;
+    justify-content: start;
+    white-space:nowrap;
+}
+.input{
+    padding-bottom:1rem;
+    font-size: 14px;
+}
+.red2{
+    font-size: 1rem;
+    color:red;
+    font-weight: 700;
+}
+.red3{
+    color:red;
+    font-size:0.8rem;
+}
+.previous{
+    padding-bottom: 5px;
+}
+.previous:hover{
+    border-bottom:3px solid #e81932;
+
+}
+.odul{
+    text-decoration: none;
+    font-size:0.9rem;
+}
+.odul:hover{
+    cursor:pointer;
+    border-bottom: 3px solid #e81932;
+}
+.where{
+    padding-left:2.5rem;
+    padding-right: 2.5rem;
+}
+.where .bir{
+   position: absolute;
+   left:3rem;
+   top:0.7rem;
+}
+.firsat{
+    white-space:nowrap;
+    font-size: 12px;
+}
+.firsat a{
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.firsat a:hover{
+    border-bottom: 3px solid #e81932;
+}
+.firsat i{
+    color:#e81932;
+}
+/* Flight */
+.flight{
+    margin-top: 10px;
+}
+.flight .mltply{
+    position: relative;
+    align-items: center;
+    padding-top: 15px;
+    box-shadow:0px 4px #e8e8e8;
+    background-color: #fff;
+    border:1px solid #dae0e8;
+}
+.flight .mltply:hover{
+    top:5px;
+}
+
+.flight .mltply p:hover{
+    color:#e81932;
+}
+.flight .card:hover{
+    box-shadow:0px 4px #c7c6c6;
+    cursor:pointer;
+    color: #e81932;
+}
+.flight .card i{
+    background-color: #dae0e8;
+    position: relative;
+    font-size: 16px;
+    padding: 12px 15px;
+    border-radius: 50%;
+    line-height:24px;
+    font-weight:400;
+}
+.flight .card p{
+    font-size:12px;
+    font-weight:500;
+    line-height:18px;
+}
+.flight .card p:hover{
+    color: #e81932;
+}
+.warning{
+    margin-top:30px;
+    padding: 15px 15px 15px 35px;  
+}
+.warning .container{
+    border:1px dashed #2e8ffd;
+    width:80%;
+    height:auto;
+}
+.warning i{
+    font-size:18px;
+    line-height:25px;
+    font-weight:400;
+    color:red;
+}
+.warning .dear p{
+    font-weight:700;
+    font-size: 14px;
+    line-height:25px;
+}
+.warning .info{
+    font-size:14px;
+    font-weight:300;
+    line-height: 21px;
+}
+.tatil{
+    border-right:1px solid #528ac7;
+}
+.opportunity{
+    padding:20px 0px 20px 0px;
+}
+.opportunity .kat{
+   font-size: 18px;
+   font-weight:500;
+   margin-top: 10px;
+   margin-bottom:10px;
+   border-bottom: 1px solid #528ac7;
+}
+.opportunity button{
+    background-color: #e81932!important;
+    color:#fff;
+}
+.promosyon{
+    padding-top:20px;
+    padding-bottom:20px;
+    position: relative;
+}
+.promosyon .container{
+    position:relative;
+}
+.promosyon p{
+    font-size: 1.8rem;
+}
+.promosyon img{
+    width:90%;
+    height:auto;
+    z-index: -1;
+}
+.promosyon .bi-caret-down-fill{
+    color:#e2001b;
+}
+.promosyon .bi-heart-fill{
+    position: absolute;
+    left:145px;
+    top:100px;
+    color:#fff;
+}
+.promosyon .bi-share-fill{
+    position: absolute;
+    left:180px;
+    top:100px;
+    color:#fff;
+}
+.promosyon .bi:hover{
+    color:#e2001b;
+}
+.promosyon h2{
+    font-size: 26px;
+    position: absolute;
+    top:450px;
+    left:145px;
+    z-index: 1 !important;
+    color:#fff;
+}
+.promosyon .fiyat{
+    font-size: 16px;
+    position:absolute;
+    left:145px;
+    top:500px;
+    color:#fff;
+    font-weight: 700;
+}
+.promosyon .economy{
+   font-size: 12px;
+   position: absolute;
+   top:530px;
+   left:145px;
+   color:#fff;
+}
+.promosyon button{
+    position:absolute;
+    top:550px;
+    left:145px;
+}
+.Gaziantep{
+    color:#e81932;
+}
+.promosyon h5{
+    font-size:30px;
+    margin: 20px 0px 5px 0px;
+    font-weight:100;
+}
+.promosyon .tüm{
+    font-size: 1rem;
+    text-decoration:none;
+    color:#e81932;
+    font-weight:650;
+}
+.red{
+    font-size:8px;
+    color:#e81932;
+}
+.card{
+    border:none;
+    width:300px;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* medals */ 
+.medals{
+    border-top:1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding:50px 0;
+}
+.medals p{
+    font-size: 10px;
+    font-weight:700;
+    margin-left: 10px;
+}
+.medals img{
+    cursor: pointer;
+}
+.partners{
+    margin: 40px 0;
+}
+.social-media{
+    background-color: #232b38;
+    padding: 20px 0;
+}
+.social-media a{
+    margin:0 10px;
+    color:#c3cbc7;
+    font-size:20px;
+}
+.social-media a:hover{
+    color:#1074e6;
+}
+.menu{
+    position: relative;
+    width: 100%;
+    background: #212529;
+    border-bottom:1px solid #fff;
+    white-space:nowrap;
+    overflow:auto;
+    
+}
+
+.menu .topic{
+    font-size: 17px;
+}
+
+.menu .baslik{
+    font-size: 14px;
+}
+
+.menu content{
+    color: #c3cbd7;
+    font-size: 12px;
+}
+.acilir-menu{
+    display:none;
+    position: absolute;
+    min-width: 400px;
+}
+.menu:hover .acilir-menu {
+    display: block;
+}
+.menu li{
+    margin-left: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-left: 2px solid #232b38;
+}
+.menu .secenek{
+    font-size: 11px;
+    color:#fff;
+    text-decoration: none;
+}
+footer{
+    padding-top:36px;
+    padding-bottom:36px;
+    background-color: #181c23;
+    overflow-x:scroll;
+}
+footer a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 11px;
+}
+.sub{
+    white-space: nowrap;
+}
+.sub a {
+    color:#c3cbd7;
+}
+.son{
+    color:#c3cbd7;
+    font-size: 11px;
+}
+
+@media (max-width:630px) {
+    .all{
+        overflow-x: scroll;
+    }
+    .menu{
+        overflow-x:scroll;
+        
+    }
+    .yukari{
+        display: none;
+    }
+}     
